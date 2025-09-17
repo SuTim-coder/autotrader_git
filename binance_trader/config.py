@@ -2,10 +2,10 @@ class Config:
     """交易系统的所有配置信息。"""
 
     # --- Binance API 配置 ---
-    TEST_API_KEY = "your key"
-    TEST_API_SECRET = "your secret"
+    TEST_API_KEY = ""
+    TEST_API_SECRET = ""
     # 主网
-    API_KEY = "your key"
+    API_KEY = ""
     
     # --- REST API URL ---
     # 测试网
@@ -15,7 +15,10 @@ class Config:
 
     # --- WebSocket URL ---
     # 主网
-    WS_LISTEN_URL = 'wss://fstream.binance.com'
+    # WS_LISTEN_URL = 'wss://fstream.binance.com'
+
+    # 测试网
+    WS_LISTEN_URL = 'wss://stream.binancefuture.com'
 
     # 测试网 下单url
     WS_ORDER_URL = 'wss://testnet.binancefuture.com/ws-fapi/v1'
